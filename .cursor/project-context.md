@@ -86,14 +86,3 @@ src/
 ### Leitura (UI)
 `page.tsx → components → hooks (fetch) → renderização`
 
-## API Response Pattern
-```ts
-{
-  success: boolean;
-  data: any;
-  message: string;
-  errors: string[] | null;
-  meta: {
-    timestamp: string;
-  }
-}

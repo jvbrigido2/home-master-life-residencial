@@ -48,3 +48,15 @@ export function useUsersList() {
   return { users: data, error };
 }
 ```
+
+## API Response Pattern
+```ts
+{
+  success: boolean;
+  data: any;
+  message: string;
+  errors: string[] | null;
+  meta: {
+    timestamp: string;
+  }
+}
