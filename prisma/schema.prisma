@@ -1,0 +1,13 @@
+// Home Master Life's Residencial - Prisma Schema
+// Sistema de gerenciamento para residencial de idosos
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
